@@ -1,0 +1,4 @@
+module(
+    name = "rules_7zip",
+    version = "0.1.0",
+)
