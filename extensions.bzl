@@ -1,4 +1,4 @@
-load("@rules_7zip//:fetch_qt.bzl", "setup_7zip")
+load("@rules_7zip//:setup.bzl", "setup_7zip")
 
 def _7zip_impl(ctx):
     for mod in ctx.modules:
