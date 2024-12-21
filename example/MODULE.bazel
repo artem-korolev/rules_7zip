@@ -1,0 +1,15 @@
+###############################################################################
+# Bazel now uses Bzlmod by default to manage external dependencies.
+# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+#
+# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
+###############################################################################
+
+""" example using rules_7zip """
+
+bazel_dep(name = "rules_7zip", version = "0.1.0")
+
+
+
+# ext_7zip = use_extension("@rules_7zip//:extensions.bzl", "ext_7zip")
+# ext_7zip.setup()

@@ -1,4 +1,9 @@
+""" rules_7zip """
+
 module(
     name = "rules_7zip",
     version = "0.1.0",
 )
+
+ext_7zip = use_extension("@rules_7zip//:extensions.bzl", "ext_7zip")
+ext_7zip.setup()
